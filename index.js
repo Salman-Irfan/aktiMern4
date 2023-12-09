@@ -2,8 +2,8 @@ const express = require('express')
 const connectToMongodb = require('./config/mongoDb')
 
 const app = express()
-
-const PORT = 3000
+app.use(express.json())
+const PORT = 7000 // hard global 
 
 connectToMongodb()
 
